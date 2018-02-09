@@ -1,0 +1,11 @@
+C:\Users\James\source\repos\TimeKeeperAspMvc\TimeKeeperAspMvc\bin\Debug\netcoreapp2.0\TimeKeeperAspMvc.deps.json
+C:\Users\James\source\repos\TimeKeeperAspMvc\TimeKeeperAspMvc\bin\Debug\netcoreapp2.0\TimeKeeperAspMvc.runtimeconfig.json
+C:\Users\James\source\repos\TimeKeeperAspMvc\TimeKeeperAspMvc\bin\Debug\netcoreapp2.0\TimeKeeperAspMvc.runtimeconfig.dev.json
+C:\Users\James\source\repos\TimeKeeperAspMvc\TimeKeeperAspMvc\bin\Debug\netcoreapp2.0\TimeKeeperAspMvc.dll
+C:\Users\James\source\repos\TimeKeeperAspMvc\TimeKeeperAspMvc\bin\Debug\netcoreapp2.0\TimeKeeperAspMvc.pdb
+C:\Users\James\source\repos\TimeKeeperAspMvc\TimeKeeperAspMvc\obj\Debug\netcoreapp2.0\TimeKeeperAspMvc.csprojResolveAssemblyReference.cache
+C:\Users\James\source\repos\TimeKeeperAspMvc\TimeKeeperAspMvc\obj\Debug\netcoreapp2.0\TimeKeeperAspMvc.csproj.CoreCompileInputs.cache
+C:\Users\James\source\repos\TimeKeeperAspMvc\TimeKeeperAspMvc\obj\Debug\netcoreapp2.0\TimeKeeperAspMvc.AssemblyInfoInputs.cache
+C:\Users\James\source\repos\TimeKeeperAspMvc\TimeKeeperAspMvc\obj\Debug\netcoreapp2.0\TimeKeeperAspMvc.AssemblyInfo.cs
+C:\Users\James\source\repos\TimeKeeperAspMvc\TimeKeeperAspMvc\obj\Debug\netcoreapp2.0\TimeKeeperAspMvc.dll
+C:\Users\James\source\repos\TimeKeeperAspMvc\TimeKeeperAspMvc\obj\Debug\netcoreapp2.0\TimeKeeperAspMvc.pdb
