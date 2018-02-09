@@ -8,6 +8,9 @@ using Microsoft.EntityFrameworkCore;
 using TimeKeeperAspMvc.Data;
 using TimeKeeperAspMvc.Models;
 
+using TimeKeeperAspMvc.Services;
+using Autofac;
+
 namespace TimeKeeperAspMvc.Controllers
 {
     public class AccessTimesController : Controller
@@ -25,24 +28,25 @@ namespace TimeKeeperAspMvc.Controllers
             return View(await _context.AccessTimes.ToListAsync());
         }
 
-        public async Task<IActionResult> GetTime()
+        public async Task<DateTime> GetTime()
         {
-            // NOTE: THIS IS BAD!!! Implement IoC later
-            AccessTime newAccessTime = new AccessTime();
-            newAccessTime.Time = DateTime.Now;
-            try
+            using ( var scope = Program.Container.BeginLifetimeScope())
             {
-                _context.Add(newAccessTime);
-                    await _context.SaveChangesAsync();
+                var timeService = scope.Resolve<ITimeService>();
+
+                try
+                {
+                    await timeService.LogTime(_context, DateTime.Now);
+                }
+                catch (DbUpdateException /* ex */)
+                {
+                    //Log the error (uncomment ex variable name and write a log.
+                    ModelState.AddModelError("", "Unable to save changes. " +
+                        "Try again, and if the problem persists " +
+                        "see your system administrator.");
+                }
+                return timeService.GetTime();
             }
-            catch (DbUpdateException /* ex */)
-            {
-                //Log the error (uncomment ex variable name and write a log.
-                ModelState.AddModelError("", "Unable to save changes. " +
-                    "Try again, and if the problem persists " +
-                    "see your system administrator.");
-            }
-            return Json(DateTime.Now.ToShortDateString());
         }
 
         // GET: AccessTimes/Details/5

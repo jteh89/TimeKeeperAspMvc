@@ -14,18 +14,19 @@ using TimeKeeperAspMvc.Data;
 
 // Necessary for Autofac
 using Autofac;
-using TimeKeeperAspMvc.Models;
+using TimeKeeperAspMvc.Services;
+using TimeKeeperAspMvc.Controllers;
 
 namespace TimeKeeperAspMvc
 {
     public class Program
     {
-        private static IContainer Container { get; set; }
+        public static IContainer Container { get; set; }
 
         public static void Main(string[] args)
         {
             var builder = new ContainerBuilder();
-            //builder.RegisterType<AccessTime>().As<ITimeModel>();
+            builder.RegisterType<TimeService>().As<ITimeService>();
             Container = builder.Build();
 
             var host = BuildWebHost(args);

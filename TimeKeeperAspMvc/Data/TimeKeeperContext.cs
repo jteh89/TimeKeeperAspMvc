@@ -17,6 +17,7 @@ namespace TimeKeeperAspMvc.Data
         public DbSet<AccessTime> AccessTimes { get; set; }
 
         // Rename table from 'AccessTimes' to 'AccessTime'
+        // Do this via an attribute in the entity itself
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<AccessTime>().ToTable("AccessTime");
