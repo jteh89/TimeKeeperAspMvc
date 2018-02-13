@@ -21,14 +21,8 @@ namespace TimeKeeperAspMvc
 {
     public class Program
     {
-        public static IContainer Container { get; set; }
-
         public static void Main(string[] args)
         {
-            var builder = new ContainerBuilder();
-            builder.RegisterType<TimeService>().As<ITimeService>();
-            Container = builder.Build();
-
             var host = BuildWebHost(args);
 
             using (var scope = host.Services.CreateScope())

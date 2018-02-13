@@ -9,3 +9,14 @@ C:\Users\James\source\repos\TimeKeeperAspMvc\TimeKeeperAspMvc\obj\Debug\netcorea
 C:\Users\James\source\repos\TimeKeeperAspMvc\TimeKeeperAspMvc\obj\Debug\netcoreapp2.0\TimeKeeperAspMvc.AssemblyInfo.cs
 C:\Users\James\source\repos\TimeKeeperAspMvc\TimeKeeperAspMvc\obj\Debug\netcoreapp2.0\TimeKeeperAspMvc.dll
 C:\Users\James\source\repos\TimeKeeperAspMvc\TimeKeeperAspMvc\obj\Debug\netcoreapp2.0\TimeKeeperAspMvc.pdb
+D:\Readify Projects\Sanofi\Autofac Practice\TimeKeeperAspMvc\TimeKeeperAspMvc\bin\Debug\netcoreapp2.0\TimeKeeperAspMvc.deps.json
+D:\Readify Projects\Sanofi\Autofac Practice\TimeKeeperAspMvc\TimeKeeperAspMvc\bin\Debug\netcoreapp2.0\TimeKeeperAspMvc.runtimeconfig.json
+D:\Readify Projects\Sanofi\Autofac Practice\TimeKeeperAspMvc\TimeKeeperAspMvc\bin\Debug\netcoreapp2.0\TimeKeeperAspMvc.runtimeconfig.dev.json
+D:\Readify Projects\Sanofi\Autofac Practice\TimeKeeperAspMvc\TimeKeeperAspMvc\bin\Debug\netcoreapp2.0\TimeKeeperAspMvc.dll
+D:\Readify Projects\Sanofi\Autofac Practice\TimeKeeperAspMvc\TimeKeeperAspMvc\bin\Debug\netcoreapp2.0\TimeKeeperAspMvc.pdb
+D:\Readify Projects\Sanofi\Autofac Practice\TimeKeeperAspMvc\TimeKeeperAspMvc\obj\Debug\netcoreapp2.0\TimeKeeperAspMvc.csprojResolveAssemblyReference.cache
+D:\Readify Projects\Sanofi\Autofac Practice\TimeKeeperAspMvc\TimeKeeperAspMvc\obj\Debug\netcoreapp2.0\TimeKeeperAspMvc.csproj.CoreCompileInputs.cache
+D:\Readify Projects\Sanofi\Autofac Practice\TimeKeeperAspMvc\TimeKeeperAspMvc\obj\Debug\netcoreapp2.0\TimeKeeperAspMvc.AssemblyInfoInputs.cache
+D:\Readify Projects\Sanofi\Autofac Practice\TimeKeeperAspMvc\TimeKeeperAspMvc\obj\Debug\netcoreapp2.0\TimeKeeperAspMvc.AssemblyInfo.cs
+D:\Readify Projects\Sanofi\Autofac Practice\TimeKeeperAspMvc\TimeKeeperAspMvc\obj\Debug\netcoreapp2.0\TimeKeeperAspMvc.dll
+D:\Readify Projects\Sanofi\Autofac Practice\TimeKeeperAspMvc\TimeKeeperAspMvc\obj\Debug\netcoreapp2.0\TimeKeeperAspMvc.pdb

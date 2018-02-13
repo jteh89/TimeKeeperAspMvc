@@ -16,10 +16,12 @@ namespace TimeKeeperAspMvc.Controllers
     public class AccessTimesController : Controller
     {
         private readonly TimeKeeperContext _context;
+        private readonly ITimeService _timeService;
 
-        public AccessTimesController(TimeKeeperContext context)
+        public AccessTimesController(TimeKeeperContext context, ITimeService timeService)
         {
             _context = context;
+            _timeService = timeService;
         }
 
         // GET: AccessTimes
@@ -30,23 +32,18 @@ namespace TimeKeeperAspMvc.Controllers
 
         public async Task<DateTime> GetTime()
         {
-            using ( var scope = Program.Container.BeginLifetimeScope())
+            try
             {
-                var timeService = scope.Resolve<ITimeService>();
-
-                try
-                {
-                    await timeService.LogTime(_context, DateTime.Now);
-                }
-                catch (DbUpdateException /* ex */)
-                {
-                    //Log the error (uncomment ex variable name and write a log.
-                    ModelState.AddModelError("", "Unable to save changes. " +
-                        "Try again, and if the problem persists " +
-                        "see your system administrator.");
-                }
-                return timeService.GetTime();
+                await _timeService.LogTime(_context, DateTime.Now);
             }
+            catch (DbUpdateException /* ex */)
+            {
+                //Log the error (uncomment ex variable name and write a log.
+                ModelState.AddModelError("", "Unable to save changes. " +
+                    "Try again, and if the problem persists " +
+                    "see your system administrator.");
+            }
+            return _timeService.GetTime();
         }
 
         // GET: AccessTimes/Details/5

@@ -15,6 +15,20 @@
           "lib/netstandard1.1/Autofac.dll": {}
         }
       },
+      "Autofac.Extensions.DependencyInjection/4.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Autofac": "4.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "1.1.0",
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll": {}
+        }
+      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -5056,6 +5070,17 @@
         "lib/net45/Autofac.xml",
         "lib/netstandard1.1/Autofac.dll",
         "lib/netstandard1.1/Autofac.xml"
+      ]
+    },
+    "Autofac.Extensions.DependencyInjection/4.2.0": {
+      "sha512": "cqBmgg9y7ahGbt7CPdvZFL6bA0PEwFyhIofUoUxEteZc+d0yNnE6ZvIWxHEM2F2HPJlC9SRnHWiZQq8r53moAw==",
+      "type": "package",
+      "path": "autofac.extensions.dependencyinjection/4.2.0",
+      "files": [
+        "autofac.extensions.dependencyinjection.4.2.0.nupkg.sha512",
+        "autofac.extensions.dependencyinjection.nuspec",
+        "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.dll",
+        "lib/netstandard1.1/Autofac.Extensions.DependencyInjection.xml"
       ]
     },
     "Libuv/1.10.0": {
@@ -13144,6 +13169,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Autofac >= 4.6.2",
+      "Autofac.Extensions.DependencyInjection >= 4.2.0",
       "Microsoft.AspNetCore.All >= 2.0.5",
       "Microsoft.NETCore.App >= 2.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.0.2"
@@ -13160,11 +13186,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\James\\source\\repos\\TimeKeeperAspMvc\\TimeKeeperAspMvc\\TimeKeeperAspMvc.csproj",
+      "projectUniqueName": "D:\\Readify Projects\\Sanofi\\Autofac Practice\\TimeKeeperAspMvc\\TimeKeeperAspMvc\\TimeKeeperAspMvc.csproj",
       "projectName": "TimeKeeperAspMvc",
-      "projectPath": "C:\\Users\\James\\source\\repos\\TimeKeeperAspMvc\\TimeKeeperAspMvc\\TimeKeeperAspMvc.csproj",
+      "projectPath": "D:\\Readify Projects\\Sanofi\\Autofac Practice\\TimeKeeperAspMvc\\TimeKeeperAspMvc\\TimeKeeperAspMvc.csproj",
       "packagesPath": "C:\\Users\\James\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\James\\source\\repos\\TimeKeeperAspMvc\\TimeKeeperAspMvc\\obj\\",
+      "outputPath": "D:\\Readify Projects\\Sanofi\\Autofac Practice\\TimeKeeperAspMvc\\TimeKeeperAspMvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
@@ -13199,6 +13225,10 @@
           "Autofac": {
             "target": "Package",
             "version": "[4.6.2, )"
+          },
+          "Autofac.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[4.2.0, )"
           },
           "Microsoft.AspNetCore.All": {
             "target": "Package",
